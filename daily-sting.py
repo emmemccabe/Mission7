@@ -306,11 +306,11 @@ def generate_movie(headlines, url):
 
     return script, url
 
-def write_to_file(script, news_site):
+def write_to_file(script, news_site, filepath):
     '''writes the script to a text file, with proper formatting'''
    
     # write script name
-    with open("example_output/example10.txt", "w+") as file:
+    with open("example_output/" + filepath + ".txt", "w+") as file:
         file.write(script.__str__() + "\n")
         file.write("Inspired by: " + news_site + "\n\n")
 
@@ -334,6 +334,8 @@ def unique_words(script):
 #Scrape
 #Evaluate and mutate script
 if __name__ == "__main__":
+
+    filepath = input("Which example output file would you like to write to?  (do not include .txt) EX: example11\n")
 
     headlines, url = scrape(urls)
 
@@ -383,12 +385,12 @@ if __name__ == "__main__":
         if line[1] != '':
             print(line[0] + ":" + "\t" + line[1] + "\n")
 
-    print("Open /Mission7/example_output to view script of: " + best_script.__str__())
+    print("Open /Mission7/example_output/" + filepath + " to view script of: " + best_script.__str__())
 
     #pull news site from dictionary
     site = news_sites[url]
     
     print(site)
 
-    write_to_file(best_script, site)
+    write_to_file(best_script, site, filepath)
 
