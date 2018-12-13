@@ -33,6 +33,7 @@ The satire was accomplished through the randomization of assigning lines to unli
 See System Architecture. (sys-arch.jpg)
 
 Computational Creativity:
+
 Throughout the course, I have been grappling with the definition of what it means for a system to be creative. Although I am still exploring this idea, and how to improve my techniques to achieve such creativity, I can define a creative system as a multi-dimensional process to create ANYTHING that is intentionally novel and valuable to a given audience (not necessarily a human), aligned with Boden's definition. 
 
 The Daily Sting system had a significant ability strength in "Dealing with Uncertainty," as the plethora of news stories is infinite, varied in formatting, and inclination for satirical improvement. I was limited by the rate limits placed on scraping the sites, and downloading error, which causes the system to basically self destruct. 
